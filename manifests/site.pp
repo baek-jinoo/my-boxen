@@ -74,6 +74,11 @@ node default {
   ruby::version { '2.1.0': }
   ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
+  
+  # custom installs
+  include chrome
+  include firefox
+  include onepassword
 
   # common, useful packages
   package {
